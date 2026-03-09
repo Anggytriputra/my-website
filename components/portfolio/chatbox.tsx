@@ -116,7 +116,7 @@ export function Chatbox() {
 
   return (
     <>
-      {/* Toggle Button */}
+  
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="fixed bottom-6 right-6 w-14 h-14 bg-primary text-primary-foreground rounded-full shadow-lg flex items-center justify-center hover:scale-105 transition-transform z-50"
@@ -127,8 +127,7 @@ export function Chatbox() {
           <MessageCircle className="w-6 h-6" />
         )}
       </button>
-
-      {/* Chat Window */}
+}
       {isOpen && (
         <div className="fixed bottom-24 right-6 w-[350px] md:w-[400px] bg-card border rounded-lg shadow-2xl z-50 overflow-hidden">
           {/* Header */}
@@ -280,7 +279,7 @@ export function Chatbox() {
             )}
           </div>
 
-          {/* Input */}
+      
           {isRegistered && (
             <form
               onSubmit={handleSendMessage}
